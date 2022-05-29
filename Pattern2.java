@@ -1,0 +1,30 @@
+// input : 5
+// Output : *   *   *   *   *
+
+import Problems.Pattern.PatternX;
+
+class Display extends PatternX
+{
+    public void Print()
+    {
+        super.Accept();
+        super.Display();
+
+        int iCnt = 0;
+
+        System.out.println("\nPattern is : ");
+        for(iCnt = 1; iCnt <= iNo; iCnt++)
+        {
+            System.out.print("*\t");
+        }
+    }
+}
+
+class Pattern2
+{
+    public static void main(String arg[])
+    {
+        Display obj = new Display();
+        obj.Print();
+    }
+}
